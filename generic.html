@@ -29,7 +29,40 @@
 			content: "✔ ";
 			color: blue;
 		}
+		.project-description img {
+    		max-width: 100%;
+    		height: 300;
+		}
+		.actions .buttonz {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			padding: 12px 24px;
+			font-size: 1.1em;
+			font-weight: bold;
+			color: black;
+			background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%); /* Gradient for 3D effect */
+			border: none;
+			border-radius: 8px;
+			text-decoration: none;
+			transition: all 0.2s ease-in-out;
+			min-width: 150px;
+			text-align: center;
+			box-shadow: 0px 4px 0px #d0d0d0, 0px 6px 10px rgba(0, 0, 0, 0.3); /* Creates 3D shadow effect */
+			position: relative;
+		}
+
+		.actions .buttonz:active {
+			box-shadow: 0px 2px 0px #003f7f, 0px 4px 8px rgba(0, 0, 0, 0.3); /* Makes button press down */
+			transform: translateY(2px); /* Moves button slightly down when clicked */
+		}
+
+		.actions .buttonz:hover {
+			background: linear-gradient(180deg, #0056b3 0%, #003f7f 100%); /* Darker shade on hover */
+			transform: scale(1.05); /* Slightly enlarges the button */
+		}
 	</style>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -57,7 +90,8 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post 
+						<!-- Featured Post -->
+						 <!--
 							<article class="post featured">
 								<header class="major">
 									<h2><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer">SQL Project<br />Data Cleaning
@@ -69,14 +103,15 @@
 								<ul class="actions special">
 									<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="button large" target="_blank " rel="noopener noreferrer">View Project</a></li>
 								</ul>
-							</article>-->
+							</article>
+						-->
 
 						<!-- Posts -->
 							<section class="posts">
 								<article>
 									<div class="project-description">
 										<h2>Cryptocurrency Data Analysis & Visualization</h2>
-										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Crypto%20API%20Project(v2).ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/cyrpto_api_image.jpg" alt="" width="500" height="300"></a>
+										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Crypto-API-Project-v2.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/cyrpto_api_image.jpg" alt="Cryptocurrency Data Analysis" width="500" height="300"></a>
 										<p>
 											This project leverages the <strong>CoinMarketCap API</strong> to fetch real-time cryptocurrency data, process it using 
 											<strong>Python (Pandas)</strong>, and generate insightful <strong>visualizations with Seaborn and Matplotlib</strong>. 
@@ -100,7 +135,7 @@
 										</p>
 									</div>
 									<ul class="actions special">
-										<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Crypto%20API%20Project(v2).ipynb" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
+										<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Crypto-API-Project-v2.ipynb" class="buttonz" target="_blank" rel="noopener noreferrer">View Project</a></li>
 									</ul>
 								</article>
 								
@@ -109,7 +144,7 @@
 									
 									<div class="project-description">
 										<h2>Movie Data </br>Analysis & Cleaning</h2>
-										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Movie%20Correlation%20Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/movie_analytics.jpg" alt="" width="500" height="300"></a>
+										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Movie-Correlation-Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/movie_analytics.jpg" alt="" width="500" height="300"></a>
 										<p>
 											This project focuses on analyzing and cleaning a dataset of movies using <strong>Python, Pandas, and Seaborn</strong>. 
 											The dataset includes key movie attributes such as <em>ratings, genres, release years, scores, votes, budget, and gross earnings</em>. 
@@ -134,14 +169,14 @@
 										</p>
 									</div>
 									<ul class="actions special">
-											<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Movie%20Correlation%20Project.ipynb" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
+											<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Movie-Correlation-Project.ipynb" class="buttonz" target="_blank" rel="noopener noreferrer">View Project</a></li>
 									</ul>
 								</article> 
 								 
 								<article>
 									<div class="project-description">
 										<h2>Amazon Web Scraper Project</h2>
-										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Movie%20Correlation%20Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/amazon_analytics.jpeg" alt="" width="500" height="300"></a>
+										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Amazon-WebScraper-Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/amazon_analytics.jpeg" alt="" width="500" height="300"></a>
 										<p>
 											This project automates the process of tracking product prices on <strong>Amazon</strong> using Python. By leveraging <strong>BeautifulSoup</strong> and <strong>Requests</strong>, 
 											the script extracts product details such as title and price, storing them in a <strong>CSV file</strong> for historical analysis. 
@@ -159,7 +194,7 @@
 										<p>This project is an excellent demonstration of web scraping, data automation, data extraction, CSV storage.</p>
 									</div>
 									<ul class="actions special">
-										<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb" class="button"target="_blank" rel="noopener noreferrer">View Project</a></li>
+										<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Amazon-WebScraper-Project.ipynb" class="buttonz"target="_blank" rel="noopener noreferrer">View Project</a></li>
 									</ul>
 								</article>
 							</section>
@@ -186,10 +221,9 @@
 						
 					</div>
 
-
-				<!-- Copyright -->
+					<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy;</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; 2024</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
