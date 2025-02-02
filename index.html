@@ -6,8 +6,29 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+		.project-description {
+			max-width: 700px;
+			margin: auto;
+			text-align: center;
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+		}
+		.project-description h2 {
+			color: #007bff;
+		}
+		.project-description ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		.project-description ul li::before {
+			content: "✔ ";
+			color: blue;
+		}
+	</style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -35,7 +56,7 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">SQL Portfolio</a></li>
-							<li><a href="generic.html">Python Portfolio</Portal></a></li>
+							<li><a href="generic.html">Python Portfolio</a></li>
 							<li><a href="elements.html">Tableau Portfolio</a></li>
 							
 						</ul>
@@ -50,82 +71,80 @@
 
 						<!-- Featured Post 
 							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer">SQL Project<br />Data Cleaning
-									</a></h2>
-									
-								</header>
-								<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/housing.jpg" alt="" /></a>
-								<p><center>Using SQL Server to transform raw Nashville housing data to make it more usable for analysis.</center></p>
-								<ul class="actions special">
-									<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="button large" target="_blank " rel="noopener noreferrer">View Project</a></li>
-								</ul>
 							</article>-->
 
 						<!-- Posts -->
 							<section class="posts">
 								<article>
-									<header>
-									<h2><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer">SQL Project<br />Data Cleaning
-									</a></h2>
-									</header>
-									<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/housing.jpg" alt="" width="500" height="300" /></a>
-									<p><center>Using SQL Server to transform raw Nashville housing data to make it more usable for analysis.</center></p>
+									<div class="project-description">
+										<h2>Cleaning and Transforming Nashville Housing Data Using SQL</h2>
+										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/nashvile-housing-pic.jpg" alt="" width="500" height="300" /></a>
+										<p>This project focuses on cleaning and transforming raw real estate data from Nashville to ensure consistency and accuracy for analysis. The dataset contained missing values, inconsistent formats, and redundant information, requiring a structured approach to data cleaning using SQL.</p>
+									
+										<h3>Skills Used:</h3>
+										<ul>
+											<li> Data Cleaning</li>
+											<li> SQL Queries</li>
+											<li> Data Transformation</li>
+											<li> Standardization</li>
+										</ul>
+									
+										<h3>Key Tasks Performed:</h3>
+										<ul>
+											<li> <strong>Standardized Date Formats:</strong> Converted sale dates into a consistent format for uniformity.</li>
+											<li> <strong>Handled Missing Data:</strong> Populated missing property addresses using Parcel IDs.</li>
+											<li> <strong>Split Address Columns:</strong> Separated full addresses into street, city, and state for better usability.</li>
+											<li> <strong>Standardized Categorical Data:</strong> Converted binary values in <em>"Sold as Vacant"</em> to <em>"Yes/No"</em>.</li>
+											<li> <strong>Removed Duplicates:</strong> Identified and deleted duplicate records to maintain data integrity.</li>
+											<li> <strong>Dropped Unnecessary Columns:</strong> Eliminated redundant columns to optimize the dataset.</li>
+										</ul>
+									
+										<p>By implementing these transformations, the dataset is now structured, reliable, and ready for deeper analysis and visualization.</p>
+									</div>
 									<ul class="actions special">
 										<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="button large" target="_blank " rel="noopener noreferrer">View Project</a></li>
 									</ul>
 								</article>
 								<article>
-									<header>
-										<h2><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Covid%20Portfolio%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer">SQL Project<br />Data Exploration
-										</a></h2>
+									<div class="project-description">
+										<h2>Covid-19 </br>Data </br>Exploration</h2>
+										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Covid%20Portfolio%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/covid19-pic.jpg" alt="" width="500" height="300" /></a>
+										<p>This project explores and analyzes global Covid-19 data, focusing on key metrics like cases, deaths, vaccinations, and 
+											their relationship with population statistics. It leverages various SQL techniques such as joins, common table 
+											expressions (CTEs), temporary tables, window functions, aggregate functions, data type conversions, and the 
+											creation of views to provide insights into the impact of the pandemic at a global and country level.</p>
+									
+										<h3>Skills Used:</h3>
+										<ul> 
+											<li> Joins to combine data from Covid-19 death and vaccination tables.</li>
+											<li> Common Table Expressions (CTEs) to perform intermediate calculations.</li>
+											<li> Temporary tables for storing intermediate results.</li>
+											<li> Creation of views to store reusable query results for further analysis or visualization.</li>
+										</ul>
+									
+										<h3>Key Tasks Performed:</h3>
+										<ul>
+											<li> <strong>Data Cleaning:</strong> Null values were handled for several columns in the Covid-19 deaths and vaccinations datasets by replacing empty strings with null values.</li>
+											<li> <strong>Basic Data Exploration:</strong> Retrieved essential columns (location, date, total cases, new cases, total deaths, population) to get a sense of the data for further analysis.</li>
+											<li> <strong>Statistical Analysis:</strong> Total Cases vs Total Deaths: Computed the death percentage to show the likelihood of death if infected.
+														Total Cases vs Population: Calculated the percentage of the population infected by Covid-19.
+														Countries with Highest Infection Rates and Death Counts: Identified countries with the highest infection rates and death counts, normalized by population.
+														Global Numbers: Aggregated the total number of new cases and deaths globally to assess the death percentage globally.</li>
+											<li> <strong>Advanced Techniques:</strong> Utilized CTEs and temporary tables to store intermediate results for rolling vaccination counts and percentages.
+												Created a view to encapsulate the vaccination data, making it reusable for future analysis or visualization.</li>
+										</ul>
+									
+										<p>Key Insights:
+
+											The project provides a comprehensive view of Covid-19 data at a global and national level.
+											It highlights trends in infection rates and vaccination progress, helping to identify areas of concern and success.
+											The use of SQL’s advanced features (CTEs, window functions, views) ensures efficient and effective analysis of the large datasets involved.</p>
 										
-									</header>
-									<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Covid%20Portfolio%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/covid19.jpg" alt="" width="500" height="300" /></a>
-									<p><center>Using SQL Server to explore Covid data to find the correlation between 
-											deaths and vaccinations throughout the world.</center></p>
-											<ul class="actions special">
+									</div>
+									<ul class="actions special">
 										<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Covid%20Portfolio%20Project.sql" class="button large" target="_blank " rel="noopener noreferrer">View Project</a></li>
 									</ul>
-									
 								</article>
-								<!--<article>
-									<header>
-										<h2><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Movie%20Correlation%20Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer">Python Project<br/>Movie Correlation
-										</a></h2>
-										
-									</header>
-										<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Movie%20Correlation%20Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/movies.jpg" alt="" width="500" height="300" /></a>
-										<p></p><p><center>Using Python to look at the variables that effect the gross revenue of a movie with scatter plot and heatmap visualizations.</center></p>
-										<ul class="actions special">
-											<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Movie%20Correlation%20Project.ipynb" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
-										</ul>
-								</article> 
-								 <article>
-									<header>
-										<h2><a href="https://public.tableau.com/views/CovidDashboard_17376102221630/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="image fit" target="_blank" rel="noopener noreferrer">Tableau Project<br/>Covid Dashboard
-										</a></h2>
-										
-									</header>
-									<a href="https://public.tableau.com/views/CovidDashboard_17376102221630/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/tableau2.jpg" alt="" width="500" height="300"/></a>
-									<p><center>Using Excel and SQL to create a Tableau Dashboard for Covid-19 project</center></p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/views/CovidDashboard_17376102221630/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
-									</ul>
-									
-								</article>
-							
-								<article>
-									<header>
-										<h2><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer">Python Project<br/>Amazon Web Scraper
-										</a></h2>
-									</header>
-									<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/amazon2.jpg" alt="" width="500" height="300"/></a>
-									<p><center>Using Python to scrape Amazon prices. Create and update Excel file for updated pricing.</center> </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb" class="button"target="_blank" rel="noopener noreferrer">View Project</a></li>
-									</ul>
-								</article> -->												
 							</section>
 							
 							<!-- Footer -->
@@ -137,17 +156,14 @@
 										<p>Fort Worth, TX 76180</p>
 									</section>
 									<section>
-										<h3>Phone:</h3>
-										<p>(817) 304-1441</a></p>
-									</section>
-									<section>
 										<h3>Email:</h3>
 										<p><a href="mailto: MatthewScottBurns@gmail.com">MatthewScottBurns@gmail.com</a></p>
 									</section>
 									<section>
 									<ul class="icons alt">
 										<li><a href="http://www.linkedin.com/in/matthewscottburns/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">linkedin</span></a></li>
-										<li><a href="https://github.com/MattBurns23/PortfolioProjects" class="icon brands alt fa-github"><span class="label" target="_blank" rel="noopener noreferrer">GitHub</span></a></li>
+										<li><a href="https://github.com/MattBurns23/PortfolioProjects" class="icon brands alt fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+
 									</ul>
 									
 								</section>
