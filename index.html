@@ -9,89 +9,71 @@
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-
+	
 	<style>
-		.project-description {
-			max-width: 700px;
-			margin: auto;
-			text-align: center;
-			font-family: Arial, sans-serif;
-			line-height: 1.6;
-		}
-		.project-description h2 {
-			color: #007bff;
-		}
-		.project-description ul {
-			list-style-type: none;
-			padding: 0;
-		}
-		.project-description ul li::before {
-			content: "✔ ";
-			color: blue;
-		}
-		.project-description img {
-    		max-width: 100%;
-    		height: 300;
-		}
-		.actions .buttonz {
-			display: inline-flex;
-			justify-content: center;
-			align-items: center;
-			padding: 12px 24px;
-			font-size: 1.1em;
-			font-weight: bold;
-			color: black;
-			background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%); /* Gradient for 3D effect */
-			border: none;
-			border-radius: 8px;
-			text-decoration: none;
-			transition: all 0.2s ease-in-out;
-			min-width: 150px;
-			text-align: center;
-			box-shadow: 0px 4px 0px #d0d0d0, 0px 6px 10px rgba(0, 0, 0, 0.3); /* Creates 3D shadow effect */
-			position: relative;
-		}
-
-		.actions .buttonz:active {
-			box-shadow: 0px 2px 0px #003f7f, 0px 4px 8px rgba(0, 0, 0, 0.3); /* Makes button press down */
-			transform: translateY(2px); /* Moves button slightly down when clicked */
-		}
-
-		.actions .buttonz:hover {
-			background: linear-gradient(180deg, #0056b3 0%, #003f7f 100%); /* Darker shade on hover */
-			transform: scale(1.05); /* Slightly enlarges the button */
-		}
-		
-	</style>
+        .project-description {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .project-description h2 {
+            color: #007bff;
+        }
+        .project-description img {
+            max-width: 100%;
+            height: 300;
+        }
+        .features {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .features li::before {
+            content: "✔ ";
+            color: blue;
+        }
+        .buttonz {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: black;
+            background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%);
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            min-width: 150px;
+            box-shadow: 0px 4px 0px #d0d0d0, 0px 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        .buttonz:hover {
+            background: linear-gradient(180deg, #0056b3 0%, #003f7f 100%);
+            transform: scale(1.05);
+            color: white; /* Improve contrast on hover */
+        }
+        .buttonz:active {
+            box-shadow: 0px 2px 0px #003f7f, 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transform: translateY(2px);
+        }
+    </style>
 
 	<body class="is-preload">
-
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Matt Burns<br />
-						Portfolio</h1>
-						<p>Python | SQL | Tableau </br>
-							<a href="https://github.com/MattBurns23/PortfolioProjects" target="_blank" rel="noopener noreferrer">@MattBurns</a>
-						</p>
-						<ul class="actions">
-							<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-						
-					</div>
-
+			<div id="wrapper">
 				<!-- Header -->
 					<header id="header">
-						<a href="https://github.com/MattBurns23/SQL_Projects" target="_blank" rel="noopener noreferrer" class="logo">SQL Portfolio</a>
+						<a href="https://github.com/MattBurns23/Python_Projects" target="_blank" rel="noopener noreferrer" class="logo">SQL Portfolio</a>
 					</header>
-
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">SQL Portfolio</a></li>
 							<li><a href="generic.html">Python Portfolio</a></li>
+							<li class="active"><a href="index.html">SQL Portfolio</a></li>
 							<li><a href="elements.html">Tableau Portfolio</a></li>
 							
 						</ul>
