@@ -9,89 +9,71 @@
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-
+	
 	<style>
-		.project-description {
-			max-width: 700px;
-			margin: auto;
-			text-align: center;
-			font-family: Arial, sans-serif;
-			line-height: 1.6;
-		}
-		.project-description h2 {
-			color: #007bff;
-		}
-		.project-description ul {
-			list-style-type: none;
-			padding: 0;
-		}
-		.project-description ul li::before {
-			content: "✔ ";
-			color: blue;
-		}
-		.project-description img {
-    		max-width: 100%;
-    		height: 300;
-		}
-		.actions .buttonz {
-			display: inline-flex;
-			justify-content: center;
-			align-items: center;
-			padding: 12px 24px;
-			font-size: 1.1em;
-			font-weight: bold;
-			color: black;
-			background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%); /* Gradient for 3D effect */
-			border: none;
-			border-radius: 8px;
-			text-decoration: none;
-			transition: all 0.2s ease-in-out;
-			min-width: 150px;
-			text-align: center;
-			box-shadow: 0px 4px 0px #d0d0d0, 0px 6px 10px rgba(0, 0, 0, 0.3); /* Creates 3D shadow effect */
-			position: relative;
-		}
-
-		.actions .buttonz:active {
-			box-shadow: 0px 2px 0px #003f7f, 0px 4px 8px rgba(0, 0, 0, 0.3); /* Makes button press down */
-			transform: translateY(2px); /* Moves button slightly down when clicked */
-		}
-
-		.actions .buttonz:hover {
-			background: linear-gradient(180deg, #0056b3 0%, #003f7f 100%); /* Darker shade on hover */
-			transform: scale(1.05); /* Slightly enlarges the button */
-		}
-		
-	</style>
+        .project-description {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .project-description h2 {
+            color: #007bff;
+        }
+        .project-description img {
+            max-width: 100%;
+            height: 300;
+        }
+        .features {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .features li::before {
+            content: "✔ ";
+            color: blue;
+        }
+        .buttonz {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: black;
+            background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%);
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            min-width: 150px;
+            box-shadow: 0px 4px 0px #d0d0d0, 0px 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        .buttonz:hover {
+            background: linear-gradient(180deg, #0056b3 0%, #003f7f 100%);
+            transform: scale(1.05);
+            color: white; /* Improve contrast on hover */
+        }
+        .buttonz:active {
+            box-shadow: 0px 2px 0px #003f7f, 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transform: translateY(2px);
+        }
+    </style>
 
 	<body class="is-preload">
-
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Matt Burns<br />
-						Portfolio</h1>
-						<p>Python | SQL | Tableau </br>
-							<a href="https://github.com/MattBurns23/PortfolioProjects" target="_blank" rel="noopener noreferrer">@MattBurns</a>
-						</p>
-						<ul class="actions">
-							<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-						
-					</div>
-
+			<div id="wrapper">
 				<!-- Header -->
 					<header id="header">
-						<a href="https://github.com/MattBurns23/SQL_Projects" target="_blank" rel="noopener noreferrer" class="logo">SQL Portfolio</a>
+						<a href="https://github.com/MattBurns23/Python_Projects" target="_blank" rel="noopener noreferrer" class="logo">Python Portfolio</a>
 					</header>
-
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">SQL Portfolio</a></li>
-							<li><a href="generic.html">Python Portfolio</a></li>
+							<li class="active"><a href="generic.html">Python Portfolio</a></li>
+							<li><a href="index.html">SQL Portfolio</a></li>
 							<li><a href="elements.html">Tableau Portfolio</a></li>
 							
 						</ul>
@@ -104,141 +86,201 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post 
+						<!-- Featured Post -->
+						 <!--
 							<article class="post featured">
-							</article>-->
+								<header class="major">
+									<h2><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer">SQL Project<br />Data Cleaning
+									</a></h2>
+									
+								</header>
+								<a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/housing.jpg" alt="" /></a>
+								<p><center>Using SQL Server to transform raw Nashville housing data to make it more usable for analysis.</center></p>
+								<ul class="actions special">
+									<li><a href="https://github.com/MattBurns23/PortfolioProjects/blob/main/Nashville%20Housing%20Project.sql" class="button large" target="_blank " rel="noopener noreferrer">View Project</a></li>
+								</ul>
+							</article>
+						-->
 
 						<!-- Posts -->
-							<section class="posts">
-									<article>
-										<div class="project-description">
-											<h2>Analyzing Energy Consumption & Solar Potential Using SQL</h2>
-											<a href="https://github.com/MattBurns23/SQL_Projects/blob/main/energy_project_queries.sql" class="image fit" target="_blank" rel="noopener noreferrer">
-												<img src="images/energy_pic.jpg" alt="Energy Consumption & Solar Potential Analysis" width="500" height="300"/>
-											</a>
-											<p>This project explores energy consumption trends and solar energy potential using real-world data. The dataset contains 10-minute interval readings of power consumption across multiple zones, as well as solar radiation metrics such as General Diffuse Flows and Diffuse Flows. SQL was used for data cleaning, transformation, and analysis to identify key energy trends and optimize energy usage.</p>
-									
-											<h3>Skills Used:</h3>
-											<ul>
-												<li> Data Cleaning & Transformation</li>
-												<li> SQL Queries & Aggregations</li>
-												<li> Window Functions</li>
-												<li> Solar Energy Potential Modeling</li>
-											</ul>
-									
-											<h3>Key Tasks Performed:</h3>
-											<ul>
-												<li> <strong>Processed Datetime Data:</strong> Standardized timestamps and extracted key time-based features for analysis.</li>
-												<li> <strong>Calculated Total Power Consumption:</strong> Aggregated energy usage across multiple zones to identify peak demand hours.</li>
-												<li> <strong>Analyzed Energy Demand Patterns:</strong> Grouped data by time periods (morning, evening, night) to detect consumption trends.</li>
-												<li> <strong>Computed Solar Potential:</strong> Normalized solar radiation values to assess the feasibility of solar energy generation.</li>
-												<li> <strong>Ranked Consumption Trends:</strong> Used window functions to determine the highest energy-consuming periods.</li>
-												<li> <strong>Identified Peak Demand Hours:</strong> Sorted and filtered data to highlight the highest energy usage periods.</li>
-											</ul>
-									
-											<p>By structuring and analyzing this dataset, valuable insights were uncovered regarding peak power demand, solar energy feasibility, and opportunities for energy optimization.</p>
-										</div>
-										<ul class="actions special">
-											<li><a href="https://github.com/MattBurns23/SQL_Projects/blob/main/energy_project_queries.sql" class="buttonz large" target="_blank" rel="noopener noreferrer">View Project</a></li>
-										</ul>
-									</article>
-									
-								<article>
-									<div class="project-description">
-										<h2>Cleaning and Transforming Nashville Housing Data Using SQL</h2>
-										<a href="https://github.com/MattBurns23/SQL_Projects/blob/main/Nashville-Housing-Project.sql" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/nashvile-housing-pic.jpg" alt="" width="500" height="300"/></a>
-										<p>This project focuses on cleaning and transforming raw real estate data from Nashville to ensure consistency and accuracy for analysis. The dataset contained missing values, inconsistent formats, and redundant information, requiring a structured approach to data cleaning using SQL.</p>
-									
-										<h3>Skills Used:</h3>
-										<ul>
-											<li> Data Cleaning</li>
-											<li> SQL Queries</li>
-											<li> Data Transformation</li>
-											<li> Standardization</li>
-										</ul>
-									
-										<h3>Key Tasks Performed:</h3>
-										<ul>
-											<li> <strong>Standardized Date Formats:</strong> Converted sale dates into a consistent format for uniformity.</li>
-											<li> <strong>Handled Missing Data:</strong> Populated missing property addresses using Parcel IDs.</li>
-											<li> <strong>Split Address Columns:</strong> Separated full addresses into street, city, and state for better usability.</li>
-											<li> <strong>Standardized Categorical Data:</strong> Converted binary values in <em>"Sold as Vacant"</em> to <em>"Yes/No"</em>.</li>
-											<li> <strong>Removed Duplicates:</strong> Identified and deleted duplicate records to maintain data integrity.</li>
-											<li> <strong>Dropped Unnecessary Columns:</strong> Eliminated redundant columns to optimize the dataset.</li>
-										</ul>
-									
-										<p>By implementing these transformations, the dataset is now structured, reliable, and ready for deeper analysis and visualization.</p>
-									</div>
-									<ul class="actions special">
-										<li><a href="https://github.com/MattBurns23/SQL_Projects/blob/main/Nashville-Housing-Project.sql" class="buttonz large" target="_blank " rel="noopener noreferrer">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<div class="project-description">
-										<h2>Covid-19 </br>Data </br>Exploration</h2>
-										<a href="https://github.com/MattBurns23/SQL_Projects/blob/main/Covid-Portfolio-Project.sql" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/pandemic.jpg" alt="" width="500" height="300" /></a>
-										<p>This project explores and analyzes global Covid-19 data, focusing on key metrics like cases, deaths, vaccinations, and 
-											their relationship with population statistics. It leverages various SQL techniques such as joins, common table 
-											expressions (CTEs), temporary tables, window functions, aggregate functions, data type conversions, and the 
-											creation of views to provide insights into the impact of the pandemic at a global and country level.</p>
-									
-										<h3>Skills Used:</h3>
-										<ul> 
-											<li> Joins to combine data from Covid-19 death and vaccination tables.</li>
-											<li> Common Table Expressions (CTEs) to perform intermediate calculations.</li>
-											<li> Temporary tables for storing intermediate results.</li>
-											<li> Creation of views to store reusable query results for further analysis or visualization.</li>
-										</ul>
-									
-										<h3>Key Tasks Performed:</h3>
-										<ul>
-											<li> <strong>Data Cleaning:</strong> Null values were handled for several columns in the Covid-19 deaths and vaccinations datasets by replacing empty strings with null values.</li>
-											<li> <strong>Basic Data Exploration:</strong> Retrieved essential columns (location, date, total cases, new cases, total deaths, population) to get a sense of the data for further analysis.</li>
-											<li> <strong>Statistical Analysis:</strong> Total Cases vs Total Deaths: Computed the death percentage to show the likelihood of death if infected.
-														Total Cases vs Population: Calculated the percentage of the population infected by Covid-19.
-														Countries with Highest Infection Rates and Death Counts: Identified countries with the highest infection rates and death counts, normalized by population.
-														Global Numbers: Aggregated the total number of new cases and deaths globally to assess the death percentage globally.</li>
-											<li> <strong>Advanced Techniques:</strong> Utilized CTEs and temporary tables to store intermediate results for rolling vaccination counts and percentages.
-												Created a view to encapsulate the vaccination data, making it reusable for future analysis or visualization.</li>
-										</ul>
-									
-										<p>Key Insights:
+						<section class="posts">
+							<article>
+								<div class="project-description">
+									<h2>MLflow Docker Project<br/>Iris Classifier & MLOps</h2>
+									<a href="https://github.com/MattBurns23/mlflow-docker-iris" class="image fit" target="_blank" rel="noopener noreferrer">
+										<img src="images/mlflow_project.jpg" alt="MLflow Docker Iris Classifier" width="500" height="300"/>
+									</a>
+									<p>
+										This end-to-end machine learning project showcases <strong>experiment tracking</strong>, <strong>model versioning</strong>, and <strong>containerized reproducibility</strong> using MLflow and Docker. A <code>RandomForestClassifier</code> is trained on the classic Iris dataset and tracked for metrics and input signature.
+									</p>
 
-											The project provides a comprehensive view of Covid-19 data at a global and national level.
-											It highlights trends in infection rates and vaccination progress, helping to identify areas of concern and success.
-											The use of SQL’s advanced features (CTEs, window functions, views) ensures efficient and effective analysis of the large datasets involved.</p>
-										
-									</div>
-									<ul class="actions special">
-										<li><a href="https://github.com/MattBurns23/SQL_Projects/blob/main/Covid-Portfolio-Project.sql" class="buttonz large" target="_blank " rel="noopener noreferrer">View Project</a></li>
+									<h3>Key Features:</h3>
+									<ul class="features">
+										<li>Tracks model metrics and parameters using <strong>MLflow</strong></li>
+										<li>Includes <strong>Dockerfile</strong> for reproducible training and deployment</li>
+										<li>Logs model input/output signature and accuracy</li>
+										<li>Demonstrates lightweight MLOps best practices</li>
 									</ul>
-								</article>
-							</section>
-							
-							<!-- Footer -->
-							<footer id="footer">
-										
-								<section class="split contact">
-									<section class="alt">
-										<h3>Location:</h3>
-										<p>Fort Worth, TX 76180</p>
-									</section>
-									<section>
-										<h3>Email:</h3>
-										<p><a href="mailto: MatthewScottBurns@gmail.com">MatthewScottBurns@gmail.com</a></p>
-									</section>
-									<section>
-									<ul class="icons alt">
-										<li><a href="http://www.linkedin.com/in/matthewscottburns/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">linkedin</span></a></li>
-										<li><a href="https://github.com/MattBurns23" class="icon brands alt fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
 
+									<h3>Why It’s Valuable:</h3>
+									<p>
+										This project bridges the gap between data science and DevOps, illustrating how to build, track, and run machine learning projects reliably across environments.
+									</p>
+
+									<ul class="actions special">
+										<li><a href="https://github.com/MattBurns23/mlflow-docker-iris" class="buttonz" target="_blank" rel="noopener noreferrer">View Project</a></li>
 									</ul>
+								</div>
+							</article>
+
+							<article>
+								<div class="project-description">
+									<h2>MLB Data Analysis with Jupyter</h2>
+									<a href="https://github.com/MattBurns23/Python_Projects/blob/main/mlb_analysis.ipynb" class="image fit" target="_blank" rel="noopener noreferrer">
+										<img src="images/baseball.jpg" alt="MLB Data Analysis Visualization" width="500" height="300">
+									</a>
+									<p>
+										This project fetches and analyzes MLB data using the <strong>MLB Stats API</strong>, processed with <strong>Pandas</strong>, and visualized using <strong>Seaborn</strong> and <strong>Matplotlib</strong> in a Jupyter Notebook. It explores team listings, 2025 schedules, 2024 standings, and top career batting averages, delivering insights through clean, interactive visualizations—all without a database dependency.
+									</p>
+						
+									<h3>Key Features:</h3>
+									<ul class="features">
+										<li>Integrates the <strong>MLB Stats API</strong> to fetch real-time team, schedule, and player data</li>
+										<li>Uses <strong>Pandas</strong> for efficient data processing and transformation</li>
+										<li>Creates visualizations with <strong>Seaborn</strong> and <strong>Matplotlib</strong> to highlight standings and batting leaders</li>
+										<li>Self-contained in a Jupyter Notebook, showcasing code, analysis, and plots in one place</li>
+									</ul>
+						
+									<h3>Why It’s Valuable:</h3>
+									<p>
+										This project demonstrates the ability to extract meaningful insights from raw API data and present them visually. It’s a lightweight, reproducible example of data analysis skills, ideal for exploring sports stats or similar datasets, with no setup beyond Python libraries required.
+									</p>
+						
+									<ul class="actions special">
+										<a href="https://github.com/MattBurns23/Python_Projects/blob/main/mlb_analysis.ipynb" class="buttonz" target="_blank" rel="noopener noreferrer">View Project</a>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<div class="project-description">
+									<h2>Automated Weather Data Pipeline</h2>
+									<a href="https://github.com/MattBurns23/Python_Projects/blob/main/fetch_weather_data.py" class="image fit" target="_blank" rel="noopener noreferrer">
+										<img src="images/weather_data_2.jpg" alt="Weather Data Pipeline" width="500" height="300">
+									</a>
+									<p>
+										This Python project automates fetching real-time weather data for multiple cities via the <strong>OpenWeatherMap API</strong>. It processes the data with <strong>Pandas</strong>, stores it in a <strong>MySQL database</strong> and <strong>CSV</strong>, and runs daily at 7:00 AM using the <strong>schedule</strong> library, with error handling for reliability.
+									</p>
+						
+									<h3>Key Features:</h3>
+									<ul class="features">
+										<li>Fetches and processes weather data using the <strong>OpenWeatherMap API</strong> and <strong>Pandas</strong></li>
+										<li>Stores data in a <strong>MySQL database</strong> and <strong>CSV</strong> for flexibility</li>
+										<li>Automates daily updates at 7:00 AM with <strong>schedule</strong></li>
+										<li>Includes <strong>error handling</strong> for robust operation</li>
+									</ul>
+						
+									<h3>Why It’s Valuable:</h3>
+									<p>
+										This pipeline delivers consistent, up-to-date weather data without manual effort, ideal for monitoring trends or building weather-based applications. Its dual storage and automation make it a practical, reusable tool for data-driven projects.
+									</p>
+						
+									<ul class="actions special">
+										<a href="https://github.com/MattBurns23/Python_Projects/blob/main/fetch_weather_data.py" class="buttonz" target="_blank" rel="noopener noreferrer">View Project</a>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<div class="project-description">
+									<h2>Cryptocurrency Data Analysis & Visualization</h2>
+									<a href="https://github.com/MattBurns23/Python_Projects/blob/main/Crypto-API-Project-v2.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/cyrpto_api_image.jpg" alt="Cryptocurrency Data Analysis" width="500" height="300"></a>
+									<p>
+										This project uses the <strong>CoinMarketCap API</strong> to fetch real-time cryptocurrency data, processed with <strong>Pandas</strong>, and visualized with <strong>Seaborn</strong> and <strong>Matplotlib</strong>. It analyzes price trends and percentage changes for major coins like Bitcoin and Ethereum.
+									</p>
+									<h3>Key Features:</h3>
+									<ul class="features">
+										<li>Fetches live crypto data via <strong>CoinMarketCap API</strong></li>
+										<li>Cleans and structures data with <strong>Pandas</strong></li>
+										<li>Visualizes trends using <strong>Seaborn</strong> and <strong>Matplotlib</strong></li>
+										<li>Saves data to <strong>CSV</strong> for further analysis</li>
+									</ul>
+									<h3>Why It’s Valuable:</h3>
+									<p>
+										This project showcases API integration, data processing, and visualization skills, making it a strong example for data analytics in financial technology.
+									</p>
+								</div>
+								<ul class="actions special">
+									<li><a href="https://github.com/MattBurns23/Python_Projects/blob/main/Crypto-API-Project-v2.ipynb" class="buttonz" target="_blank" rel="noopener noreferrer">View Project</a></li>
+								</ul>
+							</article>
+							<article>
+								<div class="project-description">
+									<h2>Movie Data </br>Analysis & Cleaning</h2>
+									<a href="https://github.com/MattBurns23/Python_Projects/blob/main/Movie-Correlation-Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/movie_analytics.jpg" alt="" width="500" height="300"></a>
+									<p>
+										This project cleans and analyzes a movie dataset using <strong>Pandas</strong> and <strong>Seaborn</strong>, handling missing values, converting data types, and extracting new columns from attributes like ratings, genres, and earnings.
+									</p>
+									<h3>Key Features:</h3>
+									<ul class="features">
+										<li>Loads and explores movie data with <strong>Pandas</strong></li>
+										<li>Handles missing and inconsistent data</li>
+										<li>Converts and creates columns for analysis</li>
+										<li>Prepares data for visualization with <strong>Seaborn</strong></li>
+									</ul>
+									<h3>Why It’s Valuable:</h3>
+									<p>
+										This project highlights data cleaning and transformation skills, essential for analytics and machine learning, enabling insights into movie performance trends.
+									</p>
+								</div>
+								<ul class="actions special">
+										<li><a href="https://github.com/MattBurns23/Python_Projects/blob/main/Movie-Correlation-Project.ipynb" class="buttonz" target="_blank" rel="noopener noreferrer">View Project</a></li>
+								</ul>
+							</article> 
+							<article>
+								<div class="project-description">
+									<h2>Amazon Web Scraper Project</h2>
+									<a href="https://github.com/MattBurns23/Python_Projects/blob/main/Amazon-WebScraper-Project.ipynb" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/amazon_analytics.jpeg" alt="" width="500" height="300"></a>
+									<p>
+										This project automates tracking Amazon product prices using <strong>BeautifulSoup</strong> and <strong>Requests</strong>. It extracts titles and prices, stores them in a <strong>CSV</strong>, and runs continuously to monitor trends with <strong>Pandas</strong>.
+									</p>
+									<h3>Key Features:</h3>
+									<ul class="features">
+										<li>Scrapes product data with <strong>BeautifulSoup</strong></li>
+										<li>Saves and appends data to a <strong>CSV</strong></li>
+										<li>Runs on a loop for continuous updates</li>
+										<li>Analyzes trends with <strong>Pandas</strong></li>
+									</ul>
+									<h3>Why It’s Valuable:</h3>
+									<p>
+										This project demonstrates web scraping, automation, and data extraction skills, valuable for e-commerce monitoring and price analysis.
+									</p>
+								</div>
+								<ul class="actions special">
+									<li><a href="https://github.com/MattBurns23/Python_Projects/blob/main/Amazon-WebScraper-Project.ipynb" class="buttonz"target="_blank" rel="noopener noreferrer">View Project</a></li>
+								</ul>
+							</article>
+						</section>
+								
+						<!-- Footer -->
+						<footer id="footer">
 									
+							<section class="split contact">
+								<section class="alt">
+									<h3>Location:</h3>
+									<p>Fort Worth, TX 76180</p>
 								</section>
-							</footer>
+								<section>
+									<h3>Email:</h3>
+									<p><a href="mailto: MatthewScottBurns@gmail.com">MatthewScottBurns@gmail.com</a></p>
+								</section>
+								<section>
+									<ul class="icons alt">
+									<li><a href="http://www.linkedin.com/in/matthewscottburns/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">linkedin</span></a></li>
+									<li><a href="https://github.com/MattBurns23" class="icon brands alt fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</footer>
 						
 					</div>
-
 
 					<!-- Copyright -->
 					<div id="copyright">
